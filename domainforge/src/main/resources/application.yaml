@@ -1,0 +1,42 @@
+spring:
+  application:
+    name: domainforge
+  datasource:
+    url: jdbc:postgresql://localhost:5432/domainforge
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 1733779521@qq.com
+    password: your-password # 邮箱授权码
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  ai:
+    deepseek:
+      api-key: sk-7b9b187317304c24ad10eb9e39ad547d
+      base-url: https://api.deepseek.com
+      chat:
+        options:
+          model: deepseek-v4-flash
+    zhipuai:
+      api-key: dd9c442592e44c92b5de03826aa7e2dc.QGQd2no82IYBnlhE
+      base-url: https://open.bigmodel.cn/api/paas
+      chat:
+        options:
+          model: glm-4.7-flash
+mybatis:
+  type-aliases-package: com.domainforge.model.entity
+  mapper-locations: classpath:mapper/*.xml
+  type-handlers-package: com.domainforge.typehandler
+
+document:
+  storage:
+    base-path: ./data/documents

@@ -1,0 +1,6 @@
+.git/
+CLAUDE*
+docs/
+examples/
+*.log
+*.sh
