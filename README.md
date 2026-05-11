@@ -1,4 +1,4 @@
-# DomainForge：定制领域可插拔智能 Agent 编排平台
+# DomainForge：领域定制可插拔智能 Agent 编排平台
 
 一个基于 LangChain + LangGraph 构建的企业级智能 Agent 编排平台，支持多模型统一治理、复杂任务规划、多 Agent 协作、RAG 检索增强与 MCP 工具生态接入，能够快速适配不同垂直领域的智能应用场景。
 
